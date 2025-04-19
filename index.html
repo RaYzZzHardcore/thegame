@@ -1,34 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>The Game Chatbot</title>
-    <script src="https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js"></script>
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        window.AgentInitializer.init({
-          agentRenderURL: "https://eu.jotform.com/agent/01964ee269d77ed0b8eaa4a5f219ef196c5f",
-          rootId: "JotformAgent-01964ee269d77ed0b8eaa4a5f219ef196c5f",
-          formID: "01964ee269d77ed0b8eaa4a5f219ef196c5f",
-          queryParams: ["skipWelcome=1", "maximizable=1"],
-          domain: "https://eu.jotform.com",
-          isDraggable: false,
-          background: "linear-gradient(180deg, #6C73A8 0%, #6C73A8 100%)",
-          buttonBackgroundColor: "#0066C3",
-          buttonIconColor: "#FFFFFF",
-          variant: false,
-          customizations: {
-            greeting: "Yes",
-            greetingMessage: "Hi! The game?",
-            pulse: "Yes",
-            position: "left"
-          },
-          isVoice: false,
-        });
-      });
-    </script>
-  </head>
-  <body>
-    <div id="JotformAgent-01964ee269d77ed0b8eaa4a5f219ef196c5f"></div>
-  </body>
-</html>
+<script src='https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js'></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    window.AgentInitializer.init({
+      agentRenderURL: "https://eu.jotform.com/agent/01964ee269d77ed0b8eaa4a5f219ef196c5f",
+      rootId: "JotformAgent-01964ee269d77ed0b8eaa4a5f219ef196c5f",
+      formID: "01964ee269d77ed0b8eaa4a5f219ef196c5f",
+      queryParams: ["skipWelcome=1", "maximizable=1"],
+      domain: "https://eu.jotform.com",
+      isDraggable: false,
+      background: "linear-gradient(180deg, #6C73A8 0%, #6C73A8 100%)",
+      buttonBackgroundColor: "#0066C3",
+      buttonIconColor: "#FFFFFF",
+      variant: false,
+      customizations: {
+        "greeting": "Yes",
+        "greetingMessage": "Hi! The game?",
+        "pulse": "Yes",
+        "position": "left",
+        "autoOpenChatIn": "1"
+      },
+      isVoice: false,
+    });
+  });
+</script>
